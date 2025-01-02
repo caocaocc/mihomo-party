@@ -4,9 +4,9 @@ import SettingItem from '../base/base-setting-item'
 import { RadioGroup, Radio } from '@nextui-org/react'
 import { useAppConfig } from '@renderer/hooks/use-app-config'
 const titleMap = {
+  profileCardStatus: '订阅管理',
   sysproxyCardStatus: '系统代理',
   tunCardStatus: '虚拟网卡',
-  profileCardStatus: '订阅管理',
   proxyCardStatus: '代理组',
   ruleCardStatus: '规则',
   resourceCardStatus: '外部资源',
@@ -21,9 +21,9 @@ const titleMap = {
 const SiderConfig: React.FC = () => {
   const { appConfig, patchAppConfig } = useAppConfig()
   const {
+    profileCardStatus = 'col-span-2',
     sysproxyCardStatus = 'col-span-1',
     tunCardStatus = 'col-span-1',
-    profileCardStatus = 'col-span-2',
     proxyCardStatus = 'col-span-1',
     ruleCardStatus = 'col-span-1',
     resourceCardStatus = 'col-span-1',
@@ -37,9 +37,9 @@ const SiderConfig: React.FC = () => {
   } = appConfig || {}
 
   const cardStatus = {
+    profileCardStatus,
     sysproxyCardStatus,
     tunCardStatus,
-    profileCardStatus,
     proxyCardStatus,
     ruleCardStatus,
     resourceCardStatus,
