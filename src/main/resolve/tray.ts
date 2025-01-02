@@ -101,48 +101,48 @@ export const buildContextMenu = async (): Promise<Menu> => {
         await triggerFloatingWindow()
       }
     },
-    {
-      id: 'rule',
-      label: '规则模式',
-      accelerator: ruleModeShortcut,
-      type: 'radio',
-      checked: mode === 'rule',
-      click: async (): Promise<void> => {
-        await patchControledMihomoConfig({ mode: 'rule' })
-        await patchMihomoConfig({ mode: 'rule' })
-        mainWindow?.webContents.send('controledMihomoConfigUpdated')
-        mainWindow?.webContents.send('groupsUpdated')
-        ipcMain.emit('updateTrayMenu')
-      }
-    },
-    {
-      id: 'global',
-      label: '全局模式',
-      accelerator: globalModeShortcut,
-      type: 'radio',
-      checked: mode === 'global',
-      click: async (): Promise<void> => {
-        await patchControledMihomoConfig({ mode: 'global' })
-        await patchMihomoConfig({ mode: 'global' })
-        mainWindow?.webContents.send('controledMihomoConfigUpdated')
-        mainWindow?.webContents.send('groupsUpdated')
-        ipcMain.emit('updateTrayMenu')
-      }
-    },
-    {
-      id: 'direct',
-      label: '直连模式',
-      accelerator: directModeShortcut,
-      type: 'radio',
-      checked: mode === 'direct',
-      click: async (): Promise<void> => {
-        await patchControledMihomoConfig({ mode: 'direct' })
-        await patchMihomoConfig({ mode: 'direct' })
-        mainWindow?.webContents.send('controledMihomoConfigUpdated')
-        mainWindow?.webContents.send('groupsUpdated')
-        ipcMain.emit('updateTrayMenu')
-      }
-    },
+    // {
+    //   id: 'rule',
+    //   label: '规则模式',
+    //   accelerator: ruleModeShortcut,
+    //   type: 'radio',
+    //   checked: mode === 'rule',
+    //   click: async (): Promise<void> => {
+    //     await patchControledMihomoConfig({ mode: 'rule' })
+    //     await patchMihomoConfig({ mode: 'rule' })
+    //     mainWindow?.webContents.send('controledMihomoConfigUpdated')
+    //     mainWindow?.webContents.send('groupsUpdated')
+    //     ipcMain.emit('updateTrayMenu')
+    //   }
+    // },
+    // {
+    //   id: 'global',
+    //   label: '全局模式',
+    //   accelerator: globalModeShortcut,
+    //   type: 'radio',
+    //   checked: mode === 'global',
+    //   click: async (): Promise<void> => {
+    //     await patchControledMihomoConfig({ mode: 'global' })
+    //     await patchMihomoConfig({ mode: 'global' })
+    //     mainWindow?.webContents.send('controledMihomoConfigUpdated')
+    //     mainWindow?.webContents.send('groupsUpdated')
+    //     ipcMain.emit('updateTrayMenu')
+    //   }
+    // },
+    // {
+    //   id: 'direct',
+    //   label: '直连模式',
+    //   accelerator: directModeShortcut,
+    //   type: 'radio',
+    //   checked: mode === 'direct',
+    //   click: async (): Promise<void> => {
+    //     await patchControledMihomoConfig({ mode: 'direct' })
+    //     await patchMihomoConfig({ mode: 'direct' })
+    //     mainWindow?.webContents.send('controledMihomoConfigUpdated')
+    //     mainWindow?.webContents.send('groupsUpdated')
+    //     ipcMain.emit('updateTrayMenu')
+    //   }
+    // },
     { type: 'separator' },
     {
       type: 'checkbox',
