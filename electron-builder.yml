@@ -36,6 +36,7 @@ nsis:
   perMachine: true
   createDesktopShortcut: always
 mac:
+  sign: false
   target:
     - pkg
   entitlementsInherit: build/entitlements.mac.plist
