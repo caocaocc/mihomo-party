@@ -80,14 +80,14 @@
   },
   "mihomo": {
     "userAgent": "Subscription User Agent",
-    "userAgentPlaceholder": "Default: clash.meta",
+    "userAgentPlaceholder": "clash.meta",
     "delayTest": {
       "url": "Delay Test URL",
-      "urlPlaceholder": "Default: https://www.gstatic.com/generate_204",
+      "urlPlaceholder": "https://detectportal.firefox.com/success.txt",
       "concurrency": "Delay Test Concurrency",
-      "concurrencyPlaceholder": "Default: 50",
+      "concurrencyPlaceholder": "50",
       "timeout": "Delay Test Timeout",
-      "timeoutPlaceholder": "Default: 5000"
+      "timeoutPlaceholder": "5000"
     },
     "gist": {
       "title": "Sync Runtime Config to Gist",
@@ -112,8 +112,8 @@
       "low": "Low"
     },
     "workDir": {
-      "title": "Separate Work Directory for Different Subscriptions",
-      "tooltip": "Enable to avoid conflicts when different subscriptions have proxy groups with the same name"
+      "title": "Separate Work Directory for Different Profiles",
+      "tooltip": "Enable to avoid conflicts when different Profiles have proxy groups with the same name"
     },
     "controlDns": "Control DNS Settings",
     "controlSniff": "Control Domain Sniffing",

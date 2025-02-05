@@ -83,14 +83,14 @@
     "restart": "重启内核",
     "memory": "内存使用",
     "userAgent": "订阅 User Agent",
-    "userAgentPlaceholder": "默认：clash.meta",
+    "userAgentPlaceholder": "clash.meta",
     "delayTest": {
       "url": "延迟测试 URL",
-      "urlPlaceholder": "默认：https://www.gstatic.com/generate_204",
+      "urlPlaceholder": "https://detectportal.firefox.com/success.txt",
       "concurrency": "延迟测试并发数",
-      "concurrencyPlaceholder": "默认：50",
+      "concurrencyPlaceholder": "50",
       "timeout": "延迟测试超时",
-      "timeoutPlaceholder": "默认：5000"
+      "timeoutPlaceholder": "5000"
     },
     "gist": {
       "title": "同步运行时配置到 Gist",
@@ -115,8 +115,8 @@
       "low": "低"
     },
     "workDir": {
-      "title": "不同订阅使用独立工作目录",
-      "tooltip": "启用后可避免不同订阅中存在相同名称的代理组时发生冲突"
+      "title": "不同配置使用独立工作目录",
+      "tooltip": "启用后可避免不同配置中存在相同名称的代理组时发生冲突"
     },
     "controlDns": "控制 DNS 设置",
     "controlSniff": "控制域名嗅探",
